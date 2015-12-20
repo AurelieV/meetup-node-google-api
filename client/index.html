@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr" ng-app="app">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Meetup Node - Connect to Google APIs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="mainController as ctrl">
+Hello meetup !
+<h1> Mes événéments </h1>
+<ul>
+  <li ng-repeat="event in ctrl.events | orderBy:'date'">
+    {{ event.title }}, le {{ event.date | date }} (id: {{ event.googleId }})
+  </li>
+  <li>
+    <form>
+      <input type="text" ng-model="event.title">
+      <input type="date" ng-model="event.date">
+      <button ng-click="ctrl.createEvent(event)"> Ajouter </button>
+    </form>
+  </li>
+</ul>
+
+<h1> Récupérer mes agendas </h1>
+<a href="{{ctrl.authUrl}}"> Get calendars ! </a>
+<ul>
+  <li ng-repeat="calendar in ctrl.calendars"> {{ calendar.summary }}</li>
+</ul>
+
+<script src="vendors/angular/angular.js"></script>
+<script src="vendors/angular-resource/angular-resource.js"></script>
+<script src="vendors/lb-services.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
