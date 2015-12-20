@@ -9,7 +9,7 @@
   * `common/models/google-account.js` and `server/services/clientAuthCalendarService.js` for client side authentication
 
 ## Complete google authentification information
-* Go to (Google Dev Console)[https://console.developers.google.com/flows/enableapi?apiid=admin&credential=client_key]
+* Go to [Google Dev Console](https://console.developers.google.com/flows/enableapi?apiid=admin&credential=client_key)
 * Choose or create a project
 * Go to `Identifiants` page.
 * Create a new account key service and download a .json file
