@@ -14,6 +14,8 @@
 * Go to `Identifiants` page.
 * Create a new account key service and download a .json file
 * Put it on `server/data` and name it `service-account-key.json`
+* Allow your service account to read/write your calendar
+* Copy your calendarId in `server/data/ids.json`
 * Create an OAuth Key
 * Create a file `server/data/oauth-key.json` with keys `client_id` and `client_secret`
 * Don't forget to activate the Google API you want to use in the Google Developers Console (for this repo, Google Calendar)
