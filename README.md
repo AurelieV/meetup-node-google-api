@@ -19,6 +19,7 @@
 * Create an OAuth Key
 * Create a file `server/data/oauth-key.json` with keys `client_id` and `client_secret`
 * Don't forget to activate the Google API you want to use in the Google Developers Console (for this repo, Google Calendar)
+* And change the id of the calendar in all code (you have not access to this one :))
 
 ## Launch the project
 * `npm install`
